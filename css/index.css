@@ -189,6 +189,20 @@ nav a {
 	text-align: center;
 	font-size: 65px;
 }
+.intro button {
+		width:120px;
+		height:25px;
+		text-align:center;
+		padding: 0px;
+		margin: 0px 0px 20px 20px;
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 12px;
+		background-color: white;
+		border: 1px solid black; 
+		border-radius: 4px;
+	}
+
+
 
 /* ******Style for top sections *********/
 .topSections {
@@ -231,3 +245,108 @@ footer {
 }
 
 /* ******media queries and break points styles*******/
+
+/* ****** for tablet styles*******/
+@media (max-width: 800px) {
+body {
+		width: 800px;
+        margin: 0 auto;
+        max-height: 1370px;
+    }
+.round {
+	display: none;
+    }
+
+    .intro-container div {
+    padding: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+	align-items: center;
+}
+.logo {
+padding 25px 10px;
+}
+
+.links {
+    display: flex;
+     justify-content: center;
+    width: 100%;
+    padding: 25px 10px;
+}
+
+.links a {
+    display: flex;
+     align-items: space-around;
+    width: 16%;
+}
+
+/* ****** for mobile styles*******/
+@media (max-width: 500px) {
+body {
+		width: 500px;
+		margin: 0 auto;
+    }
+    
+ .round {
+		display: none;
+    }
+.intro-container div {
+    padding: 20px;
+    align-items: center;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+	align-items: center;
+}
+.logo {
+padding 25px 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px 10px;
+}
+
+.links a {
+    display: flex;
+    padding: 25px 10px;
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid grey;
+}
+#contactLink{
+border-bottom: 1px solid grey;
+}
+
+.topSections, .lowerSections {
+flex-direction: column;
+max-width: 90vw;
+}
+
+.topSections div, .lowerSections div {
+max-width: 90vw;
+padding: 25px 10px;
+}
+
+}
