@@ -1,3 +1,358 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Bangers", cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 100vw;
+	margin: 0 auto;
+	padding: 5%;
+	/* line-height: 1.3; */
+}
+/* style for logo/nav bar ===============*/
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+	text-decoration: none;
+	color: grey;
+}
+
+.links {
+display: flex;
+width: 60%;
+justify-content: space-between;
+}
+
+/* ******Style for intro Container********* */
+.intro-container {
+	display: flex;
+	padding: 20px 10px;
+}
+
+.intro-container img,
+.intro-container div {
+	padding: 20px;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+}
+.intro h1 {
+	text-align: center;
+	font-size: 65px;
+}
+.intro button {
+		width:120px;
+		height:25px;
+		text-align:center;
+		padding: 0px;
+		margin: 0px 0px 20px 20px;
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 12px;
+		background-color: white;
+		border: 1px solid black; 
+		/* border-radius: 4px; */
+	}
 
 
+
+/* ******Style for top sections *********/
+.topSections {
+	display: flex;
+}
+
+.topSections div {
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+	padding: 20px 10px;
+}
+
+.middle-img {
+	width: 90vw;
+}
+/* ******Style for Lower sections*********/
+
+.lowerSections {
+	display: flex;
+}
+
+.lowerSections div {
+	display: flex;
+	flex-direction: column;
+	max-width: 33.33%;
+	padding: 20px 10px;
+}
+
+/* ******Style for contact section********/
+.contact {
+	padding: 20px 10px;
+}
+
+/* ******Style for copyright ********/
+footer {
+	text-align: center;
+	width: 100vw;
+	padding: 20px 10px;
+}
+
+/* ******media queries and break points styles*******/
+
+/* ****** for tablet styles*******/
+@media (max-width: 800px) {
+body {
+		width: 800px;
+        margin: 0 auto;
+        max-height: 1370px;
+    }
+.round {
+	display: none;
+    }
+
+    .intro-container div {
+    padding: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+	align-items: center;
+}
+.logo {
+padding 25px 10px;
+}
+
+.links {
+    display: flex;
+     justify-content: center;
+    width: 100%;
+    padding: 25px 10px;
+}
+
+.links a {
+    display: flex;
+     align-items: space-around;
+    width: 16%;
+}
+
+/* ****** for mobile styles*******/
+@media (max-width: 500px) {
+body {
+		width: 500px;
+		margin: 0 auto;
+    }
+    
+ .round {
+		display: none;
+    }
+.intro-container div {
+    padding: 20px;
+    align-items: center;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+	align-items: center;
+}
+.logo {
+padding 25px 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px 10px;
+}
+
+.links a {
+    display: flex;
+    padding: 25px 10px;
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid grey;
+}
+#contactLink{
+border-bottom: 1px solid grey;
+}
+
+.topSections, .lowerSections {
+flex-direction: column;
+max-width: 90vw;
+}
+
+.topSections div, .lowerSections div {
+max-width: 90vw;
+padding: 25px 10px;
+}
+
+}
